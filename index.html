@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FocusView — Sinopsis tiempo justo, sin spoilers</title>
+  <meta name="description" content="FocusView: sinopsis breves, libres de spoilers y con indicadores de compromiso temporal. Ahorra tiempo, decide con confianza y recupera la emoción del entretenimiento.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(90deg, #10b981 0%, #06b6d4 50%, #6366f1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-overlay {
+      background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.6) 100%);
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: saturate(180%) blur(14px);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-2">
+          <span class="inline-block w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 via-cyan-500 to-indigo-500"></span>
+          <span class="font-semibold text-lg">FocusView</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="#features" class="text-sm hover:text-emerald-600">Características</a>
+          <a href="#how-it-works" class="text-sm hover:text-emerald-600">Cómo funciona</a>
+          <a href="#gallery" class="text-sm hover:text-emerald-600">Galería</a>
+          <a href="#contact" class="text-sm hover:text-emerald-600">Contacto</a>
+        </nav>
+        <a href="#contact" class="md:inline-flex hidden px-4 py-2 rounded-lg bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+          Probar FocusView
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="relative">
+    <div class="absolute inset-0">
+      <!-- Imagen Hero (con fallback si expira el token) -->
+      <img
+        src="https://downloadscdn6.freepik.com/23/2149142/2149141900.jpg?filename=familia-de-tiro-completo-sentado-en-el-sofa.jpg"
+        alt="Familia sentada en el sofá mirando televisión"
+        class="w-full h-[80vh] md:h-[92vh] object-cover"
+        loading="eager"
+        onerror="this.onerror=null;this.src='https://picsum.photos/1600/900?random=1';"
+      >
+      <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+      <div class="max-w-3xl glass rounded-2xl p-6 md:p-8">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
+           Películas y series en casa, <span class="gradient-text">sin perder tiempo</span>.
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-gray-800 max-w-2xl">
+          FocusView ofrece sinopsis breves y libres de spoilers, con indicadores de compromiso temporal y valoraciones auténticas de la comunidad.
+          Decide en menos de un minuto qué ver esta noche.
+        </p>
+        <div class="mt-8 flex items-center gap-4">
+          <a href="#contact" class="px-5 py-3 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+            Quiero probar FocusView
+          </a>
+          <a href="#features" class="px-5 py-3 rounded-lg bg-white text-gray-900 font-semibold hover:bg-gray-100 border border-gray-200">
+            Ver características
+          </a>
+        </div>
+        <div class="mt-8 flex flex-wrap items-center gap-4 text-gray-700">
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 bg-emerald-500 rounded-full"></span>
+            <span class="text-sm">Sinopsis sin spoilers</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 bg-cyan-500 rounded-full"></span>
+            <span class="text-sm">Indicador de tiempo y recompensa</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 bg-indigo-500 rounded-full"></span>
+            <span class="text-sm">Valoraciones reales de la comunidad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Lo que hace único a FocusView</h2>
+        <p class="mt-4 text-gray-600">
+          Diseñado para adultos que valoran su tiempo: claridad, confianza y decisiones rápidas, sin spoilers.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
+          <div class="w-12 h-12 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">1</div>
+          <h3 class="mt-4 font-semibold text-lg">Sinopsis “tiempo justo”</h3>
+          <p class="mt-2 text-gray-600">Resumen en 2–3 frases, libre de spoilers, con tono y ritmo narrativo.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
+          <div class="w-12 h-12 rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center font-bold">2</div>
+          <h3 class="mt-4 font-semibold text-lg">Indicador de compromiso</h3>
+          <p class="mt-2 text-gray-600">“Maratón corto”, “seguimiento prolongado” o “película de impacto” para decidir en segundos.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
+          <div class="w-12 h-12 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold">3</div>
+          <h3 class="mt-4 font-semibold text-lg">Comunidad auténtica</h3>
+          <p class="mt-2 text-gray-600">Votos simples: “vale la pena hasta el final” vs. “se desinfla”. Sin ruido, sin spoilers.</p>
+        </div>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 gap-6 md:gap-8">
+        <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
+          <h3 class="font-semibold text-lg">Ahorro de tiempo real</h3>
+          <p class="mt-2 text-gray-600">Decide en menos de 60 segundos qué ver, sin perder la magia de la historia.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
+          <h3 class="font-semibold text-lg">Protección contra spoilers</h3>
+          <p class="mt-2 text-gray-600">Espacios y formatos diseñados para preservar el suspenso. Tu experiencia narrativa, protegida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how-it-works" class="py-16 md:py-24 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Cómo funciona</h2>
+        <p class="mt-4 text-gray-600">Un flujo simple para validar y usar FocusView desde el primer día.</p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-6 md:gap-8">
+        <div class="p-6 rounded-2xl bg-white shadow-sm border border-gray-100">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-600 text-white font-bold">1</span>
+          <h3 class="mt-4 font-semibold">Busca el título</h3>
+          <p class="mt-2 text-gray-600">Ingresa la película o serie que te interesa.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white shadow-sm border border-gray-100">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-cyan-600 text-white font-bold">2</span>
+          <h3 class="mt-4 font-semibold">Lee la sinopsis breve</h3>
+          <p class="mt-2 text-gray-600">2–3 frases, sin spoilers, con tono y ritmo.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white shadow-sm border border-gray-100">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-indigo-600 text-white font-bold">3</span>
+          <h3 class="mt-4 font-semibold">Revisa el compromiso</h3>
+          <p class="mt-2 text-gray-600">Duración y tipo: maratón corto, prolongado o película.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white shadow-sm border border-gray-100">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-fuchsia-600 text-white font-bold">4</span>
+          <h3 class="mt-4 font-semibold">Decide en 60 segundos</h3>
+          <p class="mt-2 text-gray-600">Y comparte tu voto: ¿vale la pena hasta el final?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold">Momentos FocusView</h2>
+          <p class="mt-2 text-gray-600">Adultos disfrutando de su tiempo libre, sin frustraciones.</p>
+        </div>
+        <a href="#contact" class="hidden md:inline-flex px-4 py-2 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-700">
+          Únete a la beta
+        </a>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Enlaces proporcionados, con fallback si expiran -->
+        <img class="w-full h-64 object-cover rounded-xl border border-gray-200"
+             src="https://downloadscdn6.freepik.com/637285/13/12627.jpg?filename=dame-ese-control-remoto.jpg"
+             alt="Persona con control remoto"
+             loading="lazy"
+             onerror="this.onerror=null;this.src='https://picsum.photos/800/600?random=2';">
+        <img class="w-full h-64 object-cover rounded-xl border border-gray-200"
+             src="https://downloadscdn6.freepik.com/637285/13/12639.jpg?filename=esta-pelicula-es-muy-divertida.jpg"
+             alt="Personas riendo viendo película"
+             loading="lazy"
+             onerror="this.onerror=null;this.src='img/pareja-feliz-disfrutando.jpg.jpg';">
+        <img class="w-full h-64 object-cover rounded-xl border border-gray-200"
+             src="https://downloadscdn6.freepik.com/23/2149154/2149153039.jpg?filename=familia-pasando-tiempo-frente-la-television.jpg"
+             alt="Familia pasando tiempo frente a la televisión"
+             loading="lazy"
+             onerror="this.onerror=null;this.src='https://picsum.photos/800/600?random=4';">
+      </div>
+      <p class="mt-4 text-xs text-gray-500">
+        Fuente: Freepik (URLs directas). Si el token expira, verás imágenes de prueba automáticas. Para producción, descarga las imágenes y usa rutas locales (por ejemplo: /img/archivo.jpg).
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA banner -->
+  <section class="py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl bg-gradient-to-r from-emerald-600 via-cyan-600 to-indigo-600 p-8 md:p-10 text-white flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div>
+          <h3 class="text-xl md:text-2xl font-bold">¿List@ para decidir en menos de un minuto?</h3>
+          <p class="mt-1 text-white/90">Únete a la beta de FocusView y recibe sinopsis sin spoilers con indicador de compromiso temporal.</p>
+        </div>
+        <a href="#contact" class="px-5 py-3 rounded-lg bg-white text-gray-900 font-semibold hover:bg-white/90">
+          Solicitar acceso
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact form -->
+  <section id="contact" class="py-16 md:py-24 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold">Contacto y acceso a la beta</h2>
+        <p class="mt-3 text-gray-600">
+          Déjanos tus datos y te enviaremos invitación. También puedes escribir a
+          <a href="mailto:ivonnecastro2005@yahoo.com" class="text-emerald-700 font-semibold">ivonnecastro2005@yahoo.com</a>.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
+          <h3 class="font-semibold text-lg">¿Qué recibirás?</h3>
+          <ul class="mt-3 space-y-2 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="mt-1 inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>Acceso a sinopsis “tiempo justo” de títulos populares.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 inline-block w-2 h-2 rounded-full bg-cyan-500"></span>
+              <span>Indicadores de compromiso temporal calibrados por la comunidad.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="mt-1 inline-block w-2 h-2 rounded-full bg-indigo-500"></span>
+              <span>Encuesta breve para ayudarnos a mejorar FocusView.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- FORMULARIO: Reemplaza el 'action' con tu endpoint real -->
+        <form
+          class="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm"
+          method="post"
+          action="https://example.com/api/contact"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <div class="grid grid-cols-1 gap-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+              <input id="name" name="name" type="text" required
+                     class="mt-1 w-full rounded-lg border-gray-300 focus:border-emerald-500 focus:ring-emerald-500"/>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+              <input id="email" name="email" type="email" required
+                     value="ivonnecastro2005@yahoo.com"
+                     class="mt-1 w-full rounded-lg border-gray-300 focus:border-emerald-500 focus:ring-emerald-500"/>
+            </div>
+            <div>
+              <label for="persona" class="block text-sm font-medium text-gray-700">¿Con qué perfil te identificas?</label>
+              <select id="persona" name="persona"
+                      class="mt-1 w-full rounded-lg border-gray-300 focus:border-emerald-500 focus:ring-emerald-500">
+                <option value="carmen">Carmen — Pragmática (calidad sostenida, evitar perder tiempo)</option>
+                <option value="luis">Luis — Analítico (optimizar tiempo en familia)</option>
+                <option value="marta">Marta — Anti-spoilers (proteger la sorpresa)</option>
+                <option value="diego">Diego — Emocional (elegir por estado de ánimo)</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+              <textarea id="message" name="message" rows="4" placeholder="Cuéntanos qué frustraciones quieres resolver con FocusView..."
+                        class="mt-1 w-full rounded-lg border-gray-300 focus:border-emerald-500 focus:ring-emerald-500"></textarea>
+            </div>
+            <div class="flex items-center gap-2">
+              <input id="agree" name="agree" type="checkbox" required
+                     class="rounded border-gray-300 text-emerald-600 focus:ring-emerald-500">
+              <label for="agree" class="text-sm text-gray-700">Acepto ser contactad@ para participar en la beta de FocusView.</label>
+            </div>
+            <button type="submit"
+                    class="mt-2 inline-flex items-center justify-center px-5 py-3 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+              Enviar solicitud
+            </button>
+            <p class="text-xs text-gray-500 mt-2">
+              Al enviar, aceptas que nos pongamos en contacto contigo para compartir acceso y encuestas relacionadas con FocusView.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-gray-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-6">
+        <div>
+          <h4 class="font-semibold">FocusView</h4>
+          <p class="mt-2 text-sm text-gray-600">Sinopsis breves y libres de spoilers con indicador de compromiso temporal.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Contacto</h4>
+          <p class="mt-2 text-sm text-gray-600">
+            <a href="mailto:ivonnecastro2005@yahoo.com" class="text-emerald-700 font-semibold">ivonnecastro2005@yahoo.com</a>
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Recursos</h4>
+          <ul class="mt-2 space-y-2 text-sm text-gray-600">
+            <li><a class="hover:text-emerald-700" href="#features">Características</a></li>
+            <li><a class="hover:text-emerald-700" href="#how-it-works">Cómo funciona</a></li>
+            <li><a class="hover:text-emerald-700" href="#gallery">Galería</a></li>
+            <li><a class="hover:text-emerald-700" href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Legal</h4>
+          <ul class="mt-2 space-y-2 text-sm text-gray-600">
+            <li><span>© 2025 FocusView</span></li>
+            <li><span>Privacidad • Términos</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 text-xs text-gray-500">
+        Para producción, descarga las imágenes y colócalas en /img. Así evitas expiración de tokens y cumples licencias.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
